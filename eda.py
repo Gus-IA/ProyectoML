@@ -2,6 +2,18 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 
+"""
+Script de Análisis Exploratorio de Datos (EDA) para el dataset de viviendas.
+
+Este script:
+- Muestra estadísticas descriptivas de las variables numéricas y categóricas.
+- Genera histogramas y gráficos geográficos.
+- Calcula y visualiza la matriz de correlaciones.
+- Añade nuevas variables relevantes para el modelo.
+
+El objetivo es obtener una mejor comprensión del conjunto de datos y su distribución.
+"""
+
 mpl.rc('axes', labelsize=14)
 mpl.rc('xtick', labelsize=12)
 mpl.rc('ytick', labelsize=12)

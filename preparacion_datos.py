@@ -15,6 +15,20 @@ from sklearn.model_selection import GridSearchCV
 import joblib
 import os
 
+"""
+Script de preparación de datos, entrenamiento y evaluación de modelos.
+
+Este script:
+- Imputa valores nulos y escala los datos.
+- Codifica variables categóricas.
+- Entrena modelos de regresión (lineal, árbol de decisión, random forest).
+- Evalúa modelos con validación cruzada.
+- Realiza ajuste de hiperparámetros con `GridSearchCV`.
+- Guarda el modelo y pipeline final usando `joblib`.
+
+Utiliza los datos de entrenamiento y prueba generados por `obtencion_datos.py`.
+"""
+
 # cargamos los datos de entrenamiento
 data = pd.read_csv("housing_train.csv")
 

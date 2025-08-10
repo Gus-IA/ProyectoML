@@ -5,6 +5,17 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 import numpy as np
 
+"""
+Script para la descarga y preparación inicial del dataset de precios de viviendas en California.
+
+Este script:
+- Descarga automáticamente un archivo `.tgz` desde una URL remota.
+- Extrae el contenido y carga los datos en un DataFrame.
+- Realiza una primera división en conjuntos de entrenamiento y prueba.
+- Aplica estratificación por categorías de ingreso.
+- Guarda los datos preparados en archivos CSV.
+"""
+
 URL = "https://mymldatasets.s3.eu-de.cloud-object-storage.appdomain.cloud/housing.tgz"
 PATH = "housing.tgz"
 
